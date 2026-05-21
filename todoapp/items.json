@@ -1,0 +1,29 @@
+{
+  "next_id": 6,
+  "items": [
+    {
+      "id": 1,
+      "text": "futás",
+      "priority": 1,
+      "done": true
+    },
+    {
+      "id": 2,
+      "text": "python tanulás",
+      "priority": 1,
+      "done": true
+    },
+    {
+      "id": 3,
+      "text": "gépírás tanulás",
+      "priority": 3,
+      "done": false
+    },
+    {
+      "id": 4,
+      "text": "angol tanulás",
+      "priority": 2,
+      "done": false
+    }
+  ]
+}

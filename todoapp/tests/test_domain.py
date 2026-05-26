@@ -6,12 +6,6 @@ from todo.dto import (
     ListMode,
 )
 
-# A domain tesztek bizonyítsák, hogy a TodoList
-# helyesen validál
-# helyesen módosít állapotot
-# jól kezeli a hibákat
-# invariánsok nem sérülnek
-
 
 def test_add_created_increases_next_id_and_stores_item():
     t = TodoList()
@@ -21,7 +15,7 @@ def test_add_created_increases_next_id_and_stores_item():
     assert res["action"] == AddAction.CREATED
     it = res["item"]
     assert it["id"] == 1
-    # ha norm_text lower-öl, akkor ez "meditálás"
+
     assert it["text"] == "meditálás"
     assert it["priority"] == 2
     assert it["done"] is False
